@@ -1,0 +1,381 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12407,        373]
+NotebookOptionsPosition[     10305,        330]
+NotebookOutlinePosition[     10705,        346]
+CellTagsIndexPosition[     10662,        343]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[StyleBox["Classical Solutions for Einstein\[CloseCurlyQuote]s \
+Field Equation for GR",
+ FontSize->36]], "Title",
+ CellChangeTimes->{{3.833908262967337*^9, 
+  3.8339082859251857`*^9}},ExpressionUUID->"8bb1a548-2e2b-4652-81d9-\
+659648256355"],
+
+Cell["\<\
+6/28/2021  
+Reference: http://www.quantumfieldtheory.info/dS_and_AdS_spaces.pdf\
+\>", "Text",
+ CellChangeTimes->{{3.8339089758279886`*^9, 3.8339090004773245`*^9}, {
+  3.8339153523133235`*^9, 
+  3.833915388473097*^9}},ExpressionUUID->"68f38c7f-f9bd-4743-a3b7-\
+b98f0994a825"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Einstein\[CloseCurlyQuote]s field equation for GR where: \[CapitalLambda] = \
+cosmological constant, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["g", "\[Mu]\[Nu]"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "bccbd955-2a35-49bc-a2d9-1196576d7bd7"],
+ "= metric of the generally curved spacetime, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["G", "\[Mu]\[Nu]"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "7afc2685-6fb0-4283-b1f7-b966963038fd"],
+ " = Einstein tensor, G = gravitational constant, and ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["T", "\[Mu]\[Nu]"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "9674631f-d4d8-4164-ae64-1f18595f19e0"],
+ "= stress-energy tensor"
+}], "Subsubsection",
+ CellChangeTimes->{{3.8339083447742996`*^9, 3.833908402068981*^9}, {
+  3.833908450887845*^9, 3.833908498086245*^9}, {3.8339087338133307`*^9, 
+  3.833908758724142*^9}, {3.8339088070371637`*^9, 3.8339088099442654`*^9}, {
+  3.8339090348877487`*^9, 3.8339090499178925`*^9}, {3.8339096280305023`*^9, 
+  3.8339096374800005`*^9}, {3.833912421203681*^9, 
+  3.8339124261461163`*^9}},ExpressionUUID->"c23b59b4-e9ad-4d70-83d6-\
+b92146002e09"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["G", "\[Mu]\[Nu]"], "+", 
+    RowBox[{
+     SubscriptBox["g", "\[Mu]\[Nu]"], "\[CapitalLambda]"}]}], "=", 
+   RowBox[{"8", 
+    SubscriptBox["\[Pi]GT", "\[Mu]\[Nu]"]}]}],
+  FontSize->24]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.8339085223898277`*^9, 
+  3.833908603526477*^9}},ExpressionUUID->"d461f77f-4ee7-442d-872e-\
+fd8456e3fbb2"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["G", "\[Mu]\[Nu]"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "95c78428-93b0-4391-8f31-c496fb268766"],
+ " is the 4D curvature term,  ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["g", "\[Mu]\[Nu]"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "b1f9b8ba-6049-45ac-9f88-80c1c2230328"],
+ "\[CapitalLambda]  is the cosmological constant term, 8\[Pi]G is a constant, \
+and ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["T", "\[Mu]\[Nu]"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "af326b9d-3aad-4e9e-bf3b-a131f9f58c7a"],
+ " is the mass-energy term.\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["T", "\[Mu]\[Nu]"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "f61d982d-9b7a-491c-9b5d-ac4a3550ea06"],
+ " and \[CapitalLambda] tell spacetime how to curve since they\
+\[CloseCurlyQuote]re both used in Eqn [1] to find ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["G", "\[Mu]\[Nu]"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "b235d606-8487-44fa-8d02-564c7e6ae250"],
+ " ."
+}], "Text",
+ CellChangeTimes->{{3.833908640717763*^9, 3.8339087196001563`*^9}, {
+  3.8339088159211197`*^9, 3.833908819766912*^9}, {3.8339090647274647`*^9, 
+  3.8339091809411736`*^9}, {3.8339124570406113`*^9, 
+  3.833912457237793*^9}},ExpressionUUID->"38ab193e-ffa4-4a59-adab-\
+a341b1486ebe"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The Einstein tensor is defined as,", "Subsubsection",
+ CellChangeTimes->{{3.8339088257755456`*^9, 
+  3.833908831900461*^9}},ExpressionUUID->"1aa8c342-888e-44c2-b38e-\
+513960c14175"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   SubscriptBox["G", "\[Mu]\[Nu]"], "=", 
+   RowBox[{
+    SubscriptBox["R", "\[Mu]\[Nu]"], "-", 
+    RowBox[{
+     FractionBox["1", "2"], 
+     SubscriptBox["g", "\[Mu]\[Nu]"], "R"}]}]}],
+  FontSize->18]], "DisplayFormula",
+ CellChangeTimes->{{3.8339088376318665`*^9, 3.83390886278179*^9}, {
+  3.833908905600306*^9, 
+  3.83390891561002*^9}},ExpressionUUID->"d2416e12-792e-46d8-ba78-\
+84b3ecb0f88f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Since a de Sitter universe has no mass-energy, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["T", "\[Mu]\[Nu]"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "37d2e2c5-cb16-4228-a614-03b556f825f1"],
+ "= 0 so [1] becomes,"
+}], "Subsubsection",
+ CellChangeTimes->{{3.8339122439660273`*^9, 3.833912278771905*^9}, {
+  3.8339124074749503`*^9, 
+  3.8339124515091605`*^9}},ExpressionUUID->"3ad4bae3-fca4-4933-97a7-\
+e1ab6efddda5"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["G", "\[Mu]\[Nu]"], "+", 
+    RowBox[{
+     SubscriptBox["g", "\[Mu]\[Nu]"], "\[CapitalLambda]"}]}], "=", "0"}],
+  FontSize->24]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.833912476764606*^9, 
+  3.83391248347554*^9}},ExpressionUUID->"be57f19b-54ab-4393-90b1-\
+f2b37b4761af"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Plug this into the Einstein tensor,", "Subsubsection",
+ CellChangeTimes->{{3.8339125046286783`*^9, 3.8339125186549835`*^9}, {
+  3.8339125699735165`*^9, 
+  3.833912578818361*^9}},ExpressionUUID->"be961a04-ce38-49c8-9d46-\
+fc685da08386"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    StyleBox["-",
+     FontSize->18], 
+    SubscriptBox[
+     StyleBox["g",
+      FontSize->18], "\[Mu]\[Nu]"]}], "\[CapitalLambda]"}], 
+  StyleBox["=",
+   FontSize->18], 
+  StyleBox[
+   RowBox[{
+    SubscriptBox["R", "\[Mu]\[Nu]"], "-", 
+    RowBox[{
+     FractionBox["1", "2"], 
+     SubscriptBox["g", "\[Mu]\[Nu]"], "R"}]}],
+   FontSize->18]}]], "DisplayFormula",
+ CellChangeTimes->{
+  3.8339125309904118`*^9, {3.8339125836464148`*^9, 
+   3.833912585939283*^9}},ExpressionUUID->"f1eab077-e893-4d54-af44-\
+1c420168b95a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Multiply both sides by ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["g", "\[Mu]\[Nu]"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "0e83e367-c9a3-4f7d-8a7b-7da34661eddf"],
+ ","
+}], "Subsubsection",
+ CellChangeTimes->{{3.8339133893342156`*^9, 
+  3.833913408504403*^9}},ExpressionUUID->"fbefe2ea-de78-42af-bc9a-\
+98a8fc27ae3d"],
+
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["g", "\[Nu]\[Mu]"], 
+      SubscriptBox["R", "\[Mu]\[Nu]"]}], "-", 
+     RowBox[{
+      FractionBox["1", "2"], 
+      SuperscriptBox["g", "\[Nu]\[Mu]"], 
+      SubscriptBox["g", "\[Mu]\[Nu]"], "R"}]}], "=", 
+    RowBox[{
+     RowBox[{"-", 
+      SuperscriptBox["g", "\[Nu]\[Mu]"]}], 
+     SubscriptBox["g", "\[Mu]\[Nu]"], "\[CapitalLambda]"}]}], 
+   "\[IndentingNewLine]"}],
+  FontSize->16], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox[
+     SuperscriptBox["R", "\[Nu]"], "\[Nu]"], 
+    StyleBox["-",
+     FontSize->16], 
+    RowBox[{
+     StyleBox[
+      FractionBox["1", "2"],
+      FontSize->16], 
+     SubscriptBox[
+      SuperscriptBox["\[Delta]", "\[Nu]"], "\[Nu]"], 
+     StyleBox["R",
+      FontSize->16]}]}], "=", 
+   RowBox[{
+    RowBox[{
+     StyleBox["-",
+      FontSize->16], 
+     SubscriptBox[
+      SuperscriptBox["\[Delta]", "\[Nu]"], "\[Nu]"]}], 
+    StyleBox["\[CapitalLambda]",
+     FontSize->16]}]}],
+  FontSize->16]}], "DisplayFormula",
+ CellChangeTimes->{{3.8339134188521285`*^9, 3.8339134408065968`*^9}, {
+  3.833913507254893*^9, 3.8339136265923805`*^9}, {3.8339137319942284`*^9, 
+  3.833913736808314*^9}},ExpressionUUID->"f5042c27-7698-428f-bba0-\
+8bf9fb0c1f82"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\[OpenCurlyDoubleQuote]In 4D, the trace of the Kronecker delta = 4. Knowing \
+that the curvature scalar R is related to the Ricci curvature tensor\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["R", "\[Mu]\[Nu]"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->18,ExpressionUUID->"d5d71f57-ade7-4875-bf4a-f5268b431a0c"],
+ StyleBox[" by R = ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    SuperscriptBox["R", "\[Nu]"], "\[Nu]"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->18,ExpressionUUID->"006f5885-2d3b-4da0-b213-ecd1f64de401"],
+ StyleBox[" ,  we find the last eqn becomes\[CloseCurlyDoubleQuote],",
+  FontSize->18]
+}], "Subsubsection",
+ CellChangeTimes->{{3.833913654956859*^9, 3.8339137784601946`*^9}, 
+   3.8339138285243053`*^9, 
+   3.833913954595768*^9},ExpressionUUID->"b15de5a3-4895-4ea4-93ab-\
+e0a4cb54c69f"],
+
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"R", "-", 
+     RowBox[{
+      FractionBox["1", "2"], "4", "R"}]}], "=", 
+    RowBox[{
+     RowBox[{"-", "4"}], "\[CapitalLambda]"}]}], "\[IndentingNewLine]"}],
+  FontSize->18], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{"R", "=", 
+   RowBox[{"4", "\[CapitalLambda]"}]}],
+  FontSize->18]}], "DisplayFormula",
+ CellChangeTimes->{{3.8339137878665023`*^9, 
+  3.8339138099321384`*^9}},ExpressionUUID->"1335a488-9dd2-4c5e-b5a3-\
+1e7094a1fe7e"],
+
+Cell["\<\
+Note that the curvature, R (scalar), is positive, constant, and 4 times the \
+cosmological constant. Therefore, positive \[CapitalLambda]  \[RightArrow]  \
+positive R and R is the same everywhere all the time. \
+\[OpenCurlyDoubleQuote]In essence, such a universe behaves like the 4D \
+surface of a 5-sphere. This is called a de Sitter spacetime.\
+\[CloseCurlyDoubleQuote]\
+\>", "Text",
+ CellChangeTimes->{{3.833913972539904*^9, 
+  3.8339141830379953`*^9}},ExpressionUUID->"02d1e2d0-19fe-44ef-9dfc-\
+207572deb6c0"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1144, 833},
+WindowMargins->{{Automatic, 347}, {39, Automatic}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c27a68cb-7269-45c2-84cd-3243a349fc5a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 255, 5, 85, "Title",ExpressionUUID->"8bb1a548-2e2b-4652-81d9-659648256355"],
+Cell[838, 29, 284, 7, 56, "Text",ExpressionUUID->"68f38c7f-f9bd-4743-a3b7-b98f0994a825"],
+Cell[CellGroupData[{
+Cell[1147, 40, 1225, 28, 69, "Subsubsection",ExpressionUUID->"c23b59b4-e9ad-4d70-83d6-b92146002e09"],
+Cell[2375, 70, 407, 12, 38, "DisplayFormulaNumbered",ExpressionUUID->"d461f77f-4ee7-442d-872e-fd8456e3fbb2"],
+Cell[2785, 84, 1447, 38, 60, "Text",ExpressionUUID->"38ab193e-ffa4-4a59-adab-a341b1486ebe"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4269, 127, 187, 3, 44, "Subsubsection",ExpressionUUID->"1aa8c342-888e-44c2-b38e-513960c14175"],
+Cell[4459, 132, 434, 13, 47, "DisplayFormula",ExpressionUUID->"d2416e12-792e-46d8-ba78-84b3ecb0f88f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4930, 150, 465, 12, 44, "Subsubsection",ExpressionUUID->"3ad4bae3-fca4-4933-97a7-e1ab6efddda5"],
+Cell[5398, 164, 346, 10, 38, "DisplayFormulaNumbered",ExpressionUUID->"be57f19b-54ab-4393-90b1-f2b37b4761af"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5781, 179, 241, 4, 44, "Subsubsection",ExpressionUUID->"be961a04-ce38-49c8-9d46-fc685da08386"],
+Cell[6025, 185, 569, 21, 47, "DisplayFormula",ExpressionUUID->"f1eab077-e893-4d54-af44-1c420168b95a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6631, 211, 370, 11, 44, "Subsubsection",ExpressionUUID->"fbefe2ea-de78-42af-bc9a-98a8fc27ae3d"],
+Cell[7004, 224, 1315, 45, 106, "DisplayFormula",ExpressionUUID->"f5042c27-7698-428f-bba0-8bf9fb0c1f82"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8356, 274, 891, 22, 68, "Subsubsection",ExpressionUUID->"b15de5a3-4895-4ea4-93ab-e0a4cb54c69f"],
+Cell[9250, 298, 501, 16, 94, "DisplayFormula",ExpressionUUID->"1335a488-9dd2-4c5e-b5a3-1e7094a1fe7e"],
+Cell[9754, 316, 523, 10, 56, "Text",ExpressionUUID->"02d1e2d0-19fe-44ef-9dfc-207572deb6c0"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
